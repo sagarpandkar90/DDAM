@@ -5,6 +5,9 @@ import pandas as pd
 EXCEL_FILE = "database.xlsx"
 SHEET_NAME = "Sheet1"
 
+st.page_link("pages/add_record.py", label="➕ नवीन मंजुरी फॉर्म भरा", icon="📝")
+
+
 # Load Excel data
 @st.cache_data
 def load_data():

@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
-from xlsxwriter import Workbook
+import xlsxwriter
 
 
 EXCEL_FILE = "form_b_database.xlsx"
