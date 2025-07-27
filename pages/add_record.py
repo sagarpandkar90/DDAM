@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
-from openpyxl import Workbook
+from xlsxwriter import Workbook
+
 
 EXCEL_FILE = "form_b_database.xlsx"
 SHEET_NAME = "Sheet1"
