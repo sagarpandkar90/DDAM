@@ -78,7 +78,7 @@ if not df.empty:
         df = df.drop(index=delete_index).reset_index(drop=True)
         save_data(df)
         st.success("रेकॉर्ड डिलीट झाला.")
-        st.experimental_rerun()
+        st.rerun()
 
     # Download button for selected village
     output = BytesIO()
