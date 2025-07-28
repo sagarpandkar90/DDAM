@@ -75,18 +75,7 @@ if not df.empty:
     st.subheader("📋 सेव्ह झालेले रेकॉर्ड:")
     st.dataframe(df, use_container_width=True)
 
-<<<<<<< HEAD
-    # Delete Record
-    delete_index = st.number_input("डिलीट करायचा क्रमांक (0 पासून):", min_value=0, max_value=len(df)-1, step=1)
-    if st.button("🗑️ डिलीट करा"):
-        df = df.drop(index=delete_index).reset_index(drop=True)
-        save_data(df)
-        st.success("रेकॉर्ड डिलीट झाला.")
-        st.rerun()
-=======
-    # ========== Delete ==========
     with st.expander("🗑️ रेकॉर्ड डिलीट करा."):
->>>>>>> 9a45260 (Improve app 1.0)
 
         max_index = len(df) - 1
         row_to_delete = st.number_input("❌ डिलीट करायचा रेकॉर्ड क्रमांक लिहा:", min_value=0, max_value=max_index,
